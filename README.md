@@ -20,7 +20,7 @@ Smart meters and discoms generate massive volumes of JSON data, but these files 
 
 ---
 
-## ✨ Features
+## ✨ Features===================================================
 
 - 🔄 **Automated JSON Standardization** → Converts raw `d1/d2/d3` blocks into a clean schema.
 - 🧠 **LLM-Powered Parsing** → Ollama + DeepSeek R1 for intelligent restructuring.
