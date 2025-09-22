@@ -1,4 +1,4 @@
-# ⚡ MeterMind-LLM
+# ⚡ MeterMind-LLM...
 
 > An **AI-powered data pipeline** that transforms raw **smart meter JSONs** into a unified, enriched schema using **LLMs (Ollama + DeepSeek R1)**.  
 > Includes **weather enrichment, location mapping, and energy metrics extraction** — built for large-scale power utility data.
