@@ -22,7 +22,7 @@ def test_chat():
         
         if response.status_code == 200:
             result = response.json()
-            print("✅ Chat successful!")
+            print(" Chat successful!")
             print(f"Response: {json.dumps(result, indent=2)}")
             
             if 'message' in result and 'content' in result['message']:
@@ -30,12 +30,13 @@ def test_chat():
             else:
                 print("Unexpected response format")
         else:
-            print(f"❌ Error: {response.status_code} - {response.text}")
+            print(f" Error: {response.status_code} - {response.text}")
             
     except requests.exceptions.Timeout:
-        print("❌ Request timed out. Model might be still loading.")
+        print(" Request timed out. Model might be still loading.")
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f" Error: {e}")
 
 if __name__ == "__main__":
+
     test_chat()
