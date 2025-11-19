@@ -87,7 +87,7 @@
 #         )
 #         return safe_json_loads(result.stdout)
 #     except Exception as e:
-#         print(f"❌ Ollama call failed: {e}")
+#         print(f" Ollama call failed: {e}")
 #         return None
 
 # # === WEATHER ===
@@ -157,7 +157,7 @@
 
 #         return weather, location
 #     except Exception as e:
-#         print(f"⚠️ Weather fetch failed for {location_code}: {e}")
+#         print(f" Weather fetch failed for {location_code}: {e}")
 #         return None, None
 
 # # === MAIN CONVERSION ===
@@ -204,12 +204,12 @@
 #             json.dump(converted, f, indent=2)
 
 #         converted_files += 1
-#         print(f"✅ Converted: {input_path}")
+#         print(f" Converted: {input_path}")
 
 #     except Exception as e:
 #         failed_files += 1
 #         failed_list.append(input_path)
-#         print(f"❌ Failed: {input_path} → {e}")
+#         print(f" Failed: {input_path} → {e}")
 
 # # === WALK FOLDER ===
 # for root, dirs, files in os.walk(input_folder):
@@ -310,7 +310,7 @@
 #         )
 #         return safe_json_loads(result.stdout)
 #     except Exception as e:
-#         print(f"❌ Ollama call failed: {e}")
+#         print(f" Ollama call failed: {e}")
 #         return None
 
 # # === SCRIPT-BASED: measurements ===
@@ -450,7 +450,7 @@
 #         weather_cache[cache_key] = {"weather": weather, "location": location}
 #         return weather, location
 #     except Exception as e:
-#         print(f"⚠️ Weather fetch failed for {location_code}: {e}")
+#         print(f" Weather fetch failed for {location_code}: {e}")
 #         return None, None
 
 # # === MAIN CONVERSION ===
@@ -500,12 +500,12 @@
 #             json.dump(converted, f, indent=2)
 
 #         converted_files += 1
-#         print(f"✅ Converted: {input_path}")
+#         print(f" Converted: {input_path}")
 
 #     except Exception as e:
 #         failed_files += 1
 #         failed_list.append(input_path)
-#         print(f"❌ Failed: {input_path} → {e}")
+#         print(f" Failed: {input_path} → {e}")
 
 # # === WALK FOLDER ===
 # for root, dirs, files in os.walk(input_folder):
@@ -761,7 +761,7 @@ def get_weather_and_location(location_code, timestamp):
         weather_cache[cache_key] = {"weather": weather, "location": location}
         return weather, location
     except Exception as e:
-        print(f"⚠️ Weather fetch failed for {location_code}: {e}")
+        print(f" Weather fetch failed for {location_code}: {e}")
         return None, None
 
 # === MAIN CONVERSION ===
@@ -844,3 +844,4 @@ if failed_list:
     print("Failed files:")
     for f in failed_list:
         print(f" - {f}")
+
